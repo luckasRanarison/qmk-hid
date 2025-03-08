@@ -1,0 +1,15 @@
+[package]
+name = "qmk-hid"
+version = "0.1.0"
+edition = "2024"
+author = ["LIOKA Ranarison Fiderana <luckasranarison@gmail.com>"]
+description = "A simple CLI for bidirectional communication with QMK keyboards using raw HID."
+license = "MIT"
+repository = "https://github.com/luckasRanarison/qmk-hid"
+readme = "README.md"
+keywords = ["qmk", "hid", "keyboard", "cli"]
+categories = ["command-line-interface", "command-line-utilities"]
+
+[dependencies]
+clap = { version = "4.5.31", features = ["derive"] }
+hidapi = "2.6.3"
