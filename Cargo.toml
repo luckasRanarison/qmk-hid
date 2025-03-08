@@ -2,7 +2,7 @@
 name = "qmk-hid"
 version = "0.1.0"
 edition = "2024"
-author = ["LIOKA Ranarison Fiderana <luckasranarison@gmail.com>"]
+authors = ["LIOKA Ranarison Fiderana <luckasranarison@gmail.com>"]
 description = "A simple CLI for bidirectional communication with QMK keyboards using raw HID."
 license = "MIT"
 repository = "https://github.com/luckasRanarison/qmk-hid"
