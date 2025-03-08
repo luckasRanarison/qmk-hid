@@ -1,5 +1,8 @@
 # qmk-hid
 
+[![Build/Lint](https://github.com/luckasRanarison/qmk-hid/actions/workflows/ci.yml/badge.svg)](https://github.com/luckasRanarison/qmk-hid/actions/workflows/ci.yml)
+[![crates.io](https://img.shields.io/crates/v/qmk-hid)](https://crates.io/crates/qmk-hid)
+
 A simple CLI for bidirectional communication with [QMK](https://qmk.fm/) keyboards using [raw HID](https://docs.qmk.fm/features/rawhid), written in [Rust](https://www.rust-lang.org/) with a small memory footprint.
 
 ## Installation
