@@ -15,13 +15,14 @@ cargo install qmk-hid
 
 ## Usage
 
-To use qmk-hid you must find you keyboard's vendor ID and product ID. They can be usually found in your keyboard's `info.json` or using tools like [lsusb](https://wiki.debian.org/lsusb).
+To use qmk-hid you must find you keyboard's vendor ID and product ID. They can be usually found in your keyboard's `info.json` or by using tools like [lsusb](https://wiki.debian.org/lsusb).
 
 On Linux, you have to setup [udev rules](https://wiki.debian.org/udev) to allow access to the HID device.
 
 ```sh
-qmk-hid --help ## prints help
-qmk-hid --vendor-id 18003 --product-id 4 ## example using a corve v4 keyboard
+qmk-hid --help # prints help
+qmk-hid --vendor-id 18003 --product-id 4 # example using a corve v4 keyboard
+qmk-hid -v 18003 -p 4 # shorthand
 ```
 
 Once `qmk-hid` is running:
@@ -33,7 +34,7 @@ Once `qmk-hid` is running:
 > [!IMPORTANT]
 > In both directions the message length should be 32 bytes or less, you have to implement a custom protocol overwise
 
-Since qmk-hid uses standard input and output for communication, it can be easily integrated into scripts or other programs. You can checkout the [NodeJS demo](./demo/host.js) for a simple example.
+Since qmk-hid uses standard input and output for communication, it can be easily integrated into scripts or other programs. You can check out the [NodeJS demo](./demo/host.js) for a simple example.
 
 ## Build
 
@@ -42,3 +43,7 @@ To build qmk-hid you will need the Rust [toolchain](https://rustup.rs/) and [lib
 ```sh
 cargo build --release
 ```
+
+## License
+
+MIT
